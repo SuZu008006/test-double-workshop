@@ -14,7 +14,7 @@ class MockTest {
         launchMissile.launchMock()
 
 
-        mockMissile.verifyCodeRedAbort(pathEnum.EXECUTE)
+        mockMissile.verifyCodeRedAbort(PathEnum.EXECUTE)
     }
 
     @Test
@@ -27,7 +27,7 @@ class MockTest {
         launchMissile.launchMock()
 
 
-        mockMissile.verifyCodeRedAbort(pathEnum.ABORT)
+        mockMissile.verifyCodeRedAbort(PathEnum.ABORT)
     }
 
     @Test
@@ -40,6 +40,6 @@ class MockTest {
         launchMissile.launchMock()
 
 
-        mockMissile.verifyCodeRedAbort(pathEnum.ABORT)
+        mockMissile.verifyCodeRedAbort(PathEnum.ABORT)
     }
 }

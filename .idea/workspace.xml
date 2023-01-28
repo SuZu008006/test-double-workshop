@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef68576-7b02-4a38-8acc-f1374755bab6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/read me.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/mock/MockMissile.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/mock/MockTest.kt" afterDir="false" />
+    <list default="true" id="bef68576-7b02-4a38-8acc-f1374755bab6" name="Changes" comment="added mock logic">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/LaunchCode.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/mock/PathEnum.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/stub/LaunchCodeStub.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/stub/StubMissile.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/stub/StubTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/LaunchMissile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LaunchMissile.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/spy/SpyTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/spy/SpyTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mock/MockMissile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mock/MockMissile.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mock/MockTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mock/MockTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mock/pathEnum.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin Enum" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -74,11 +78,16 @@
       <recent name="$PROJECT_DIR$/src/test/kotlin" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="stub" />
       <recent name="mock" />
       <recent name="" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="dummy" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="stub" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.allTest">
@@ -113,24 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MockTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StubTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -143,7 +135,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;mock.MockTest&quot;" />
+            <option value="&quot;stub.StubTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -153,7 +145,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MockTest.If the entered launch code has expired, the missile launch is aborted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StubTest.If the entered launch code has valid, the missile launch is executed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -166,7 +158,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;mock.MockTest.If the entered launch code has expired, the missile launch is aborted&quot;" />
+            <option value="&quot;stub.StubTest.If the entered launch code has valid, the missile launch is executed&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -176,7 +168,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MockTest.If the entered launch code has valid, the missile launch is executed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="stubTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -189,7 +181,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;mock.MockTest.If the entered launch code has valid, the missile launch is executed&quot;" />
+            <option value="&quot;stub.stubTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -199,7 +191,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MockTest.If the entered unsigned launch code, the missile launch is aborted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="stubTest.If the entered launch code has valid, the missile launch is executed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -212,7 +204,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;mock.MockTest.If the entered unsigned launch code, the missile launch is aborted&quot;" />
+            <option value="&quot;stub.stubTest.If the entered launch code has valid, the missile launch is executed&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -222,7 +214,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'mock'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="stubTest.If the entered unsigned launch code, the missile launch is aborted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -235,7 +227,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;mock.*&quot;" />
+            <option value="&quot;stub.stubTest.If the entered unsigned launch code, the missile launch is aborted&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -247,19 +239,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.allTest" />
-      <item itemvalue="Gradle.Tests in 'mock'" />
-      <item itemvalue="Gradle.MockTest" />
-      <item itemvalue="Gradle.MockTest.If the entered launch code has expired, the missile launch is aborted" />
-      <item itemvalue="Gradle.MockTest.If the entered launch code has valid, the missile launch is executed" />
-      <item itemvalue="Gradle.MockTest.If the entered unsigned launch code, the missile launch is aborted" />
+      <item itemvalue="Gradle.StubTest" />
+      <item itemvalue="Gradle.StubTest.If the entered launch code has valid, the missile launch is executed" />
+      <item itemvalue="Gradle.stubTest" />
+      <item itemvalue="Gradle.stubTest.If the entered launch code has valid, the missile launch is executed" />
+      <item itemvalue="Gradle.stubTest.If the entered unsigned launch code, the missile launch is aborted" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'mock'" />
-        <item itemvalue="Gradle.MockTest.If the entered unsigned launch code, the missile launch is aborted" />
-        <item itemvalue="Gradle.MockTest" />
-        <item itemvalue="Gradle.MockTest.If the entered launch code has expired, the missile launch is aborted" />
-        <item itemvalue="Gradle.MockTest.If the entered launch code has valid, the missile launch is executed" />
+        <item itemvalue="Gradle.StubTest.If the entered launch code has valid, the missile launch is executed" />
+        <item itemvalue="Gradle.stubTest.If the entered unsigned launch code, the missile launch is aborted" />
+        <item itemvalue="Gradle.stubTest" />
+        <item itemvalue="Gradle.stubTest.If the entered launch code has valid, the missile launch is executed" />
+        <item itemvalue="Gradle.StubTest" />
       </list>
     </recent_temporary>
   </component>
@@ -272,6 +264,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674715388221</updated>
       <workItem from="1674715389297" duration="14439000" />
+      <workItem from="1674897483113" duration="1762000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1674878324171</created>

@@ -1,6 +1,6 @@
 package mock
 
-enum class pathEnum {
+enum class PathEnum {
     EXECUTE,
     ABORT,
 }

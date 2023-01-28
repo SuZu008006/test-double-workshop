@@ -12,8 +12,8 @@ class MockMissile : Missile {
         launchWasCalled = true
     }
 
-    fun verifyCodeRedAbort(path: pathEnum) {
-        if (path== pathEnum.EXECUTE) {
+    fun verifyCodeRedAbort(path: PathEnum) {
+        if (path== PathEnum.EXECUTE) {
             assertTrue(launchWasCalled)
             assertFalse(disableWasCalled)
         } else {
