@@ -1,6 +1,6 @@
 import java.lang.Exception
 
-class LaunchMissile(private val missile: Missile, private val expiredLaunchCode: String) {
+class LaunchMissile(private val missile: Missile, private val launchCode: String?) {
     fun launchGoodDummy() {
         missile.launch()
     }
@@ -9,6 +9,12 @@ class LaunchMissile(private val missile: Missile, private val expiredLaunchCode:
         try {
             missile.launch()
         } catch (_: Exception) {
+        }
+    }
+
+    fun launchGoodSpy() {
+        if (launchCode != "expired launch code" && launchCode != null) {
+            missile.launch()
         }
     }
 }

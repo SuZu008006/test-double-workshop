@@ -1,3 +1,6 @@
+package dummy
+
+import LaunchMissile
 import org.junit.jupiter.api.Test
 import kotlin.test.assertFails
 
@@ -6,7 +9,11 @@ class DummyTest {
     fun `dummyMissile works`() {
         val dummyMissile = DummyMissile()
         val expiredLaunchCode = "expired launch code"
+
+
         val launchMissile = LaunchMissile(dummyMissile, expiredLaunchCode)
+
+
         assertFails {
             launchMissile.launchGoodDummy()
         }
@@ -16,7 +23,11 @@ class DummyTest {
     fun `dummyMissile don't works`() {
         val dummyMissile = DummyMissile()
         val expiredLaunchCode = "expired launch code"
+
+
         val launchMissile = LaunchMissile(dummyMissile, expiredLaunchCode)
+
+
         assertFails {
             launchMissile.launchBadDummy()
         }
