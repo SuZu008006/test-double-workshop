@@ -33,10 +33,10 @@ class SpyTest {
     }
 
     @Test
-    fun `If the entered empty launch code, the missile launch is aborted`() {
+    fun `If the entered unsigned launch code, the missile launch is aborted`() {
         val spyMissile = SpyMissile()
-        val expiredLaunchCode = null
-        val launchMissile = LaunchMissile(spyMissile, expiredLaunchCode)
+        val unsignedLaunchCode = null
+        val launchMissile = LaunchMissile(spyMissile, unsignedLaunchCode)
 
 
         launchMissile.launchSpy()

@@ -7,5 +7,4 @@ class DummyMissile: Missile {
     override fun launch() {
         throw RuntimeException()
     }
-
 }

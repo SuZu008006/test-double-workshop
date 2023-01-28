@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bef68576-7b02-4a38-8acc-f1374755bab6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/read me.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/mock/MockMissile.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/mock/MockTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/mock/PathEnum.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/LaunchMissile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LaunchMissile.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/dummy/DummyTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/dummy/DummyTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/spy/SpyTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/spy/SpyTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Kotlin Enum" />
       </list>
     </option>
   </component>
@@ -49,27 +53,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/kotlin" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="mock" />
       <recent name="" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
@@ -108,42 +113,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DummyTest.if the entered launch code has expired, the missile launch throws an error" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;dummy.DummyTest.if the entered launch code has expired, the missile launch throws an error&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
-        <extension name="net.ashald.envfile">
-          <option name="IS_ENABLED" value="false" />
-          <option name="IS_SUBST" value="false" />
-          <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-          <option name="IS_IGNORE_MISSING_FILES" value="false" />
-          <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-          <ENTRIES>
-            <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-          </ENTRIES>
-        </extension>
-      </EXTENSION>
-      <DebugAllEnabled>false</DebugAllEnabled>
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="InputValidLaunchCode.the missile launch is executed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MockTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -156,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;spy.SpyTest$InputValidLaunchCode.the missile launch is executed&quot;" />
+            <option value="&quot;mock.MockTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -166,7 +153,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SpyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MockTest.If the entered launch code has expired, the missile launch is aborted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -179,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;spy.SpyTest&quot;" />
+            <option value="&quot;mock.MockTest.If the entered launch code has expired, the missile launch is aborted&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,7 +176,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="if the entered launch code has expired.the missile launch is aborted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MockTest.If the entered launch code has valid, the missile launch is executed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -202,7 +189,53 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;spy.SpyTest$if the entered launch code has expired.the missile launch is aborted&quot;" />
+            <option value="&quot;mock.MockTest.If the entered launch code has valid, the missile launch is executed&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MockTest.If the entered unsigned launch code, the missile launch is aborted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;mock.MockTest.If the entered unsigned launch code, the missile launch is aborted&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'mock'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;mock.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,18 +247,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.allTest" />
-      <item itemvalue="Gradle.DummyTest.if the entered launch code has expired, the missile launch throws an error" />
-      <item itemvalue="Gradle.if the entered launch code has expired.the missile launch is aborted" />
-      <item itemvalue="Gradle.InputValidLaunchCode.the missile launch is executed" />
-      <item itemvalue="Gradle.SpyTest" />
+      <item itemvalue="Gradle.Tests in 'mock'" />
+      <item itemvalue="Gradle.MockTest" />
+      <item itemvalue="Gradle.MockTest.If the entered launch code has expired, the missile launch is aborted" />
+      <item itemvalue="Gradle.MockTest.If the entered launch code has valid, the missile launch is executed" />
+      <item itemvalue="Gradle.MockTest.If the entered unsigned launch code, the missile launch is aborted" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.allTest" />
-        <item itemvalue="Gradle.DummyTest.if the entered launch code has expired, the missile launch throws an error" />
-        <item itemvalue="Gradle.InputValidLaunchCode.the missile launch is executed" />
-        <item itemvalue="Gradle.if the entered launch code has expired.the missile launch is aborted" />
-        <item itemvalue="Gradle.SpyTest" />
+        <item itemvalue="Gradle.Tests in 'mock'" />
+        <item itemvalue="Gradle.MockTest.If the entered unsigned launch code, the missile launch is aborted" />
+        <item itemvalue="Gradle.MockTest" />
+        <item itemvalue="Gradle.MockTest.If the entered launch code has expired, the missile launch is aborted" />
+        <item itemvalue="Gradle.MockTest.If the entered launch code has valid, the missile launch is executed" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +271,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674715388221</updated>
-      <workItem from="1674715389297" duration="10377000" />
+      <workItem from="1674715389297" duration="14439000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1674878324171</created>
@@ -274,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674886179878</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[refactor]reviewed to unit test for a clarification of dummy logic">
+      <created>1674887475386</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674887475386</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +336,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="added dummy logic" />
     <MESSAGE value="added spy logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="added spy logic" />
+    <MESSAGE value="[refactor]reviewed to unit test for a clarification of dummy logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="[refactor]reviewed to unit test for a clarification of dummy logic" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
