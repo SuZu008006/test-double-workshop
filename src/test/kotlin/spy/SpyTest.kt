@@ -13,7 +13,7 @@ class SpyTest {
         val launchMissile = LaunchMissile(spyMissile, validLaunchCode)
 
 
-        launchMissile.launchGoodSpy()
+        launchMissile.launchSpy()
 
 
         assertTrue(spyMissile.launchWasCalled)
@@ -26,7 +26,7 @@ class SpyTest {
         val launchMissile = LaunchMissile(spyMissile, expiredLaunchCode)
 
 
-        launchMissile.launchGoodSpy()
+        launchMissile.launchSpy()
 
 
         assertFalse(spyMissile.launchWasCalled)
@@ -39,7 +39,7 @@ class SpyTest {
         val launchMissile = LaunchMissile(spyMissile, expiredLaunchCode)
 
 
-        launchMissile.launchGoodSpy()
+        launchMissile.launchSpy()
 
 
         assertFalse(spyMissile.launchWasCalled)

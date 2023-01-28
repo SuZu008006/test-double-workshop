@@ -7,6 +7,7 @@
     <list default="true" id="bef68576-7b02-4a38-8acc-f1374755bab6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/LaunchMissile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LaunchMissile.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/dummy/DummyTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/dummy/DummyTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/spy/SpyTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/spy/SpyTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +76,7 @@
       <recent name="dummy" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.InputValidLaunchCode.the missile launch is executed">
+  <component name="RunManager" selected="Gradle.allTest">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -106,6 +107,41 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="DummyTest.if the entered launch code has expired, the missile launch throws an error" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;dummy.DummyTest.if the entered launch code has expired, the missile launch throws an error&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
+        <extension name="net.ashald.envfile">
+          <option name="IS_ENABLED" value="false" />
+          <option name="IS_SUBST" value="false" />
+          <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+          <option name="IS_IGNORE_MISSING_FILES" value="false" />
+          <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+          <ENTRIES>
+            <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+          </ENTRIES>
+        </extension>
+      </EXTENSION>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="InputValidLaunchCode.the missile launch is executed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -153,52 +189,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SpyTest.If the entered launch code has expired, the missile launch is aborted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;spy.SpyTest.If the entered launch code has expired, the missile launch is aborted&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SpyTest.spyMissile works" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;spy.SpyTest.spyMissile works&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="if the entered launch code has expired.the missile launch is aborted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -222,13 +212,20 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Gradle.allTest" />
+      <item itemvalue="Gradle.DummyTest.if the entered launch code has expired, the missile launch throws an error" />
+      <item itemvalue="Gradle.if the entered launch code has expired.the missile launch is aborted" />
+      <item itemvalue="Gradle.InputValidLaunchCode.the missile launch is executed" />
+      <item itemvalue="Gradle.SpyTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.allTest" />
+        <item itemvalue="Gradle.DummyTest.if the entered launch code has expired, the missile launch throws an error" />
         <item itemvalue="Gradle.InputValidLaunchCode.the missile launch is executed" />
         <item itemvalue="Gradle.if the entered launch code has expired.the missile launch is aborted" />
         <item itemvalue="Gradle.SpyTest" />
-        <item itemvalue="Gradle.SpyTest.If the entered launch code has expired, the missile launch is aborted" />
-        <item itemvalue="Gradle.SpyTest.spyMissile works" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +237,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674715388221</updated>
-      <workItem from="1674715389297" duration="9522000" />
+      <workItem from="1674715389297" duration="10377000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1674878324171</created>
@@ -270,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674880677430</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added spy logic">
+      <created>1674886179878</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674886179878</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

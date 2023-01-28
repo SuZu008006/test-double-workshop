@@ -6,7 +6,7 @@ import kotlin.test.assertFails
 
 class DummyTest {
     @Test
-    fun `dummyMissile works`() {
+    fun `if the entered launch code has expired, the missile launch throws an error`() {
         val dummyMissile = DummyMissile()
         val expiredLaunchCode = "expired launch code"
 
@@ -15,21 +15,7 @@ class DummyTest {
 
 
         assertFails {
-            launchMissile.launchGoodDummy()
-        }
-    }
-
-    @Test
-    fun `dummyMissile don't works`() {
-        val dummyMissile = DummyMissile()
-        val expiredLaunchCode = "expired launch code"
-
-
-        val launchMissile = LaunchMissile(dummyMissile, expiredLaunchCode)
-
-
-        assertFails {
-            launchMissile.launchBadDummy()
+            launchMissile.launchDummy()
         }
     }
 }
