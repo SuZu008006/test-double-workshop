@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef68576-7b02-4a38-8acc-f1374755bab6" name="Changes" comment="added mock logic">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/LaunchCode.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/mock/PathEnum.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/stub/LaunchCodeStub.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/stub/StubMissile.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/stub/StubTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="bef68576-7b02-4a38-8acc-f1374755bab6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LaunchMissile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LaunchMissile.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mock/MockMissile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mock/MockMissile.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mock/MockTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mock/MockTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mock/pathEnum.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/read me.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +255,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674715388221</updated>
       <workItem from="1674715389297" duration="14439000" />
-      <workItem from="1674897483113" duration="1762000" />
+      <workItem from="1674897483113" duration="3429000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1674878324171</created>
@@ -308,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674887475386</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added stub logic">
+      <created>1674899368686</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674899368686</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +328,8 @@
     <MESSAGE value="added dummy logic" />
     <MESSAGE value="added spy logic" />
     <MESSAGE value="[refactor]reviewed to unit test for a clarification of dummy logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="[refactor]reviewed to unit test for a clarification of dummy logic" />
+    <MESSAGE value="added stub logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="added stub logic" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
