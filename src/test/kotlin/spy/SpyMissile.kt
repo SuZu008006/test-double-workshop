@@ -8,4 +8,8 @@ class SpyMissile : Missile {
     override fun launch() {
         launchWasCalled = true
     }
+
+    override fun disable() {
+        TODO("Not yet implemented")
+    }
 }

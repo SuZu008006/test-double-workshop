@@ -1,4 +1,7 @@
-class LaunchMissile(private val missile: Missile, private val launchCode: String?) {
+class LaunchMissile(
+    private val missile: Missile,
+    private val launchCode: String?,
+) {
     fun launchDummy() {
         missile.launch()
     }
@@ -12,6 +15,8 @@ class LaunchMissile(private val missile: Missile, private val launchCode: String
     fun launchMock() {
         if (checkLaunchCode(launchCode)) {
             missile.launch()
+        } else {
+            missile.disable()
         }
     }
 

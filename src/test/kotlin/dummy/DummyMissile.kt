@@ -7,4 +7,8 @@ class DummyMissile: Missile {
     override fun launch() {
         throw RuntimeException()
     }
+
+    override fun disable() {
+        TODO("Not yet implemented")
+    }
 }

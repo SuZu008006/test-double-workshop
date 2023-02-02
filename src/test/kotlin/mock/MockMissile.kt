@@ -12,13 +12,16 @@ class MockMissile : Missile {
         launchWasCalled = true
     }
 
-    fun verifyCodeRedAbort(path: PathEnum) {
-        if (path== PathEnum.EXECUTE) {
+    override fun disable() {
+        disableWasCalled = true
+    }
+
+    fun verifyLaunch() {
             assertTrue(launchWasCalled)
             assertFalse(disableWasCalled)
-        } else {
+    }
+    fun verifyDisable() {
             assertFalse(launchWasCalled)
-            assertFalse(disableWasCalled)
-        }
+            assertTrue(disableWasCalled)
     }
 }

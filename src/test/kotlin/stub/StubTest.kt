@@ -1,15 +1,17 @@
 package stub
 
 import LaunchMissile
+import MissileImplement
+import UsedLaunchCodesRepositoryImplement
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
 class StubTest {
     @Test
     fun `If the entered launch code has valid, the missile launch is executed`() {
-        val stubMissile = StubMissile()
+        val missile = MissileImplement(UsedLaunchCodesRepositoryImplement())
         val validLaunchCode = "valid launch code"
-        val launchMissile = LaunchMissile(stubMissile, validLaunchCode)
+        val launchMissile = LaunchMissile(missile, validLaunchCode)
         val expectedLaunchCode = ValidLaunchCodeStub()
 
 
@@ -21,9 +23,9 @@ class StubTest {
 
     @Test
     fun `If the entered launch code has expired, the missile launch is aborted`() {
-        val stubMissile = StubMissile()
+        val missile = MissileImplement(UsedLaunchCodesRepositoryImplement())
         val expiredLaunchCode = "expired launch code"
-        val launchMissile = LaunchMissile(stubMissile, expiredLaunchCode)
+        val launchMissile = LaunchMissile(missile, expiredLaunchCode)
         val expectedLaunchCode = ExpiredLaunchCodeStub()
 
 
@@ -36,9 +38,9 @@ class StubTest {
 
     @Test
     fun `If the entered unsigned launch code, the missile launch is aborted`() {
-        val stubMissile = StubMissile()
+        val missile = MissileImplement(UsedLaunchCodesRepositoryImplement())
         val unsignedLaunchCode = null
-        val launchMissile = LaunchMissile(stubMissile, unsignedLaunchCode)
+        val launchMissile = LaunchMissile(missile, unsignedLaunchCode)
         val expectedLaunchCode = UnsignedLaunchCodeStub()
 
 
